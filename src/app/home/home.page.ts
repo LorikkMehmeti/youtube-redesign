@@ -86,7 +86,7 @@ export class HomePage {
     this.theme = localStorage.getItem(STORAGE_KEY);
   }
 
-  toggleTheme(){
+  toggleTheme(event){
     this.theme = this._videoservice.changeTheme();
     this.iontoggle = !this.iontoggle;
   }
